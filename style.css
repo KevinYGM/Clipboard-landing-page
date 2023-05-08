@@ -1,0 +1,508 @@
+/*----------------------------------bases--------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    /*Primary*/
+
+--StrongCyan: hsl(171, 66%, 44%);
+--LightBlue: hsl(233, 100%, 69%);
+
+    /*Neutral*/
+--DarkGrayishBlue: hsl(210, 10%, 33%);
+--GrayishBlue: hsl(201, 11%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+html{ font-size: 62.5%; }
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 1.8rem;
+}
+
+/*-------------basic-element-------------------*/
+h1{
+    text-align:center;
+    color: var(--DarkGrayishBlue);
+}
+
+h2{
+    text-align:center;
+    color: var(--DarkGrayishBlue);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+h3{
+    font-size: 2.3rem;
+    text-align:center;
+    color: var(--DarkGrayishBlue);
+    margin-bottom: 1.6rem;
+}
+
+p{
+    display: inline-block;
+    max-width: 35rem;
+    text-align:center;
+    color: var(--GrayishBlue);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 4.6rem;
+}
+
+/*-------------header-------------------*/
+
+header{
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 3.4rem;
+}
+
+header .logo-header{
+    background-image: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    margin-top: 12rem;
+    margin-bottom: 7.3rem;
+    width:13rem;
+    height:13rem;
+}
+
+.buttons-header-sectionfour{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8.6rem; 
+}
+
+.buttons-header-sectionfour .download-ios:hover{
+    background-color: hsla(171, 66%, 44%, 0.836);
+    box-shadow: 0.3rem 0.3rem 2rem var(--StrongCyan);
+    border-color: hsla(171, 66%, 44%, 0.836);
+    cursor: pointer;
+}
+
+.buttons-header-sectionfour .download-mac:hover{
+    background-color: hsl(233, 100%, 69%, 0.836);
+    box-shadow: 0.3rem 0.3rem 2rem var(--LightBlue);
+    border-color: hsl(233, 100%, 69%, 0.836);
+    cursor: pointer;
+}
+
+.buttons-header-sectionfour .btn-download{
+    height: 5.5rem;
+    width: 30.2rem;
+    border-radius: 10rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    margin: 1.2rem;
+}
+
+.buttons-header-sectionfour .download-ios{
+    background-color: var(--StrongCyan);
+    border-color: var(--StrongCyan);
+}
+
+.buttons-header-sectionfour .download-mac{
+    background-color: var(--LightBlue);
+    border-color: var(--LightBlue);
+}
+
+/*-------------section-one-------------------*/
+
+.section-one{
+    padding: 3.4rem;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-one-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-one__image{
+    background-image: url(./images/image-computer.png
+    );
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30.9rem;
+    height: 23.7rem;
+    margin-bottom: 6.1rem;
+}
+
+.container-items-description p{ margin-bottom: 5rem; }
+
+/*-------------section-two-------------------*/
+
+.section-two{
+    padding: 3.4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-two__image{
+    background-image: url(./images/image-devices.png
+    );
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 34rem;
+    height: 23.7rem;
+}
+
+/*-------------section-three-------------------*/
+
+.section-three{ 
+    padding: 3.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.section-three__blacklist-area, 
+.section-three__text-area, 
+.section-three__preview-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three p{ margin-bottom: 9.5rem; }
+
+.section-three p:nth-child(3){ margin-bottom: 6rem; }
+
+.section-three p:nth-child(4){ margin-bottom: 1rem; }
+
+.section-three__container-functions{ 
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 7rem; 
+}
+
+.section-three__container-functions .icons{
+    display: inline-block;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+}
+
+.section-three__container-functions .icon-blacklist{
+    background-image: url(./images/icon-blacklist.svg);
+}
+
+.section-three__container-functions .icon-text{
+    background-image: url(./images/icon-text.svg);
+}
+
+.section-three__container-functions .icon-preview{
+    background-image: url(./images/icon-preview.svg);
+}
+
+.section-three__container-icons-brands{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.section-three__container-icons-brands .icons-brands{
+    display: block;
+    width: 11.5rem;
+    height: 7rem;
+    margin-bottom: 4rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section-three__container-icons-brands .icon-google{
+    background-image: url(./images/logo-google.png);
+}
+
+.section-three__container-icons-brands .icon-ibm{
+    background-image: url(./images/logo-ibm.png);
+}
+
+.section-three__container-icons-brands .icon-microsoft{
+    background-image: url(./images/logo-microsoft.png);
+}
+
+.section-three__container-icons-brands .icon-hp{
+    background-image: url(./images/logo-hp.png);
+}
+
+.section-three__container-icons-brands .icon-vector{
+    background-image: url(./images/logo-vector-graphics.png);
+}
+
+.section-four{
+    padding: 3.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*---------------------footer----------------------------------*/  
+
+footer{
+    background-color: rgb(235, 237, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid var(--StrongCyan);
+}
+
+.footer-up .logo-footer{
+    background-image: url(./images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-top: 5.5rem;
+    margin-bottom: 5rem;
+}
+
+.footer-up ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-up li{
+    margin-bottom: 3rem;
+}
+
+.footer-up a:hover{
+    color: var(--StrongCyan);
+}
+
+.footer-up a{
+    text-decoration: none; 
+    color: var(--DarkGrayishBlue);
+    font-weight: 400;
+}
+
+.footer-up .social-networks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 16rem;
+    margin-bottom: 10px;
+}
+
+.social-networks a{
+    display: inline-flex;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.social-networks a:hover{
+    color: var(--StrongCyan);
+    cursor: pointer;
+}
+
+.footer-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+.footer-down .attribution { 
+    color: var(--StrongCyan);
+    font-size: 1.6rem; 
+    text-align: center; 
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.attribution a { color: var(--LightBlue); }
+
+
+/*------------min-width: 500px--------------*/
+
+@media(min-width:500px){
+    .section-one-flex-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section-three__container-icons-brands{
+        flex-direction: row;
+        
+    }
+
+    .section-three__container-icons-brands .icons-brands{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .section-three__container-functions{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-one-flex-wrap{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-up .container-list-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        margin-top:3rem;
+    }
+
+    .footer-up ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .footer-up ul li{
+       margin-right: 0.5rem;
+       margin-bottom: 1.5rem;
+    }
+}
+
+/*------------min-width: 747px--------------*/
+
+@media(min-width: 747px){
+
+    .p-subtitle{
+        max-width: 58rem;
+    }
+
+    header{
+        background-image: url(./images/bg-header-desktop.png);
+    }
+
+    .container-items-description {
+        margin-left: 20px;
+    }
+
+    .container-items-description p{
+        text-align: left;
+    }
+
+    .container-items-description h3{
+        text-align: left;
+    }
+
+    .section-one-flex-wrap{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }   
+
+    .section-one__image{
+        width: 62rem;
+        height: 48rem;
+        margin-left: -47%;
+    }
+
+    .section-two__image{
+        width: 68rem;
+        height: 47.4rem;
+        
+    }
+
+    .section-three__container-functions{
+        flex-direction: row;
+    }
+
+    .footer-up{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer-up .container-list-footer{
+        width: 40%;
+      }
+}
+
+/*------------min-width: 1000px--------------*/
+
+@media(min-width: 1000px){
+
+    h2{
+        font-size: 3.5rem;
+    }
+
+    .p-subtitle{
+        max-width: 59rem;
+        font-size: 1.5rem;
+    }
+
+    .section-one__image{
+        width: 77rem;
+        height: 55rem;
+        margin-left: -30%;
+        margin-bottom: 1rem;
+    }
+
+    .container-items-description {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    .section-two__image{
+        width: 81.4rem;
+        height: 48.4rem;
+        margin-left: 4rem;
+    }
+
+    .footer-up .social-networks{
+        width: 10%;
+    }
+
+    .footer-up .container-list-footer{
+        margin-left: -10%;
+      }
+}
